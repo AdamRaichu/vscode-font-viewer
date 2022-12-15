@@ -12,7 +12,7 @@ export default class FontEdit {
   constructor() {}
 
   async resolveCustomEditor(document, panel, _token) {
-    var extUri = vscode.extension.getExtension("adamraichu.font-viewer").extensionUri;
+    var extUri = vscode.extensions.getExtension("adamraichu.font-viewer").extensionUri;
 
     panel.webview.options = {
       enableScripts: true,

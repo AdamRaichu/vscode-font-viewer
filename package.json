@@ -12,8 +12,8 @@
     "url": "https://github.com/AdamRaichu/vscode-font-viewer"
   },
   "version": "1.0.0",
-  "browser": "/dist/main.js",
-  "main": "/dist/main.js",
+  "browser": "./dist/main.js",
+  "main": "./dist/main.js",
   "activationEvents": [
     "onCustomEditor:fontViewer.FontEdit"
   ],

@@ -1,0 +1,36 @@
+#preview {
+  font-family: "AnUnguessableNameWhichShallNotBeTaken";
+  display: none;
+}
+
+.label {
+  font-family: var(--vscode-font-family);
+}
+
+.s12 {
+  font-size: 12px;
+}
+
+.s18 {
+  font-size: 18px;
+}
+
+.s24 {
+  font-size: 24px;
+}
+
+.s36 {
+  font-size: 36px;
+}
+
+.s48 {
+  font-size: 48px;
+}
+
+.s60 {
+  font-size: 60px;
+}
+
+.s72 {
+  font-size: 72px;
+}

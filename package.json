@@ -1,21 +1,22 @@
 {
-  "name": "example-namespace",
-  "displayName": "User-visible name",
-  "description": "A short description of the extension",
+  "name": "font-viewer",
+  "displayName": "Font Preview",
+  "description": "An extension which allows you to preview fonts.",
   "publisher": "adamraichu",
   "icon": "logo.png",
-  "authors": "AdamRaichu",
   "author": {
     "name": "AdamRaichu"
   },
   "categories": [],
   "repository": {
-    "url": "https://github.com/AdamRaichu/vscode-webext-template"
+    "url": "https://github.com/AdamRaichu/vscode-font-viewer"
   },
   "version": "1.0.0",
-  "browser": "/extension.js",
-  "main": "/extension.js",
-  "activationEvents": [],
+  "browser": "/dist/main.js",
+  "main": "/dist/main.js",
+  "activationEvents": [
+    "onCustomEditor:fontViewer.FontEdit"
+  ],
   "engines": {
     "vscode": "^1.63.0"
   },

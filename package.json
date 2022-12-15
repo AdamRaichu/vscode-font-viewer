@@ -20,5 +20,21 @@
   "engines": {
     "vscode": "^1.63.0"
   },
-  "contributes": {}
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "fontViewer.FontEdit",
+        "displayName": "Font Preview",
+        "selector": [
+          {
+            "filenamePattern": "*.otf"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "webpack"
+  }
 }

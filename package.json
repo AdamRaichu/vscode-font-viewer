@@ -3,7 +3,7 @@
   "displayName": "Font Preview",
   "description": "An extension which allows you to preview fonts.",
   "publisher": "adamraichu",
-  "icon": "logo.png",
+  "icon": "file-font-icon.png",
   "author": {
     "name": "AdamRaichu"
   },
@@ -11,7 +11,7 @@
   "repository": {
     "url": "https://github.com/AdamRaichu/vscode-font-viewer"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "browser": "./dist/main.js",
   "main": "./dist/main.js",
   "activationEvents": [

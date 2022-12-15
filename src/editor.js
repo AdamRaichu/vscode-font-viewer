@@ -56,4 +56,8 @@ export default class FontEdit {
       }
     });
   }
+
+  async openCustomDocument(uri, _context, _token) {
+    return new FontDoc(uri);
+  }
 }

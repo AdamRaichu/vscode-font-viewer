@@ -1,10 +1,13 @@
 #preview {
   font-family: "AnUnguessableNameWhichShallNotBeTaken";
+  white-space: nowrap;
+  overflow: hidden;
   display: none;
 }
 
 .label {
   font-family: var(--vscode-font-family);
+  font-size: 16px;
 }
 
 .s12 {

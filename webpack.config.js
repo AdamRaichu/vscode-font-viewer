@@ -9,4 +9,5 @@ module.exports = {
   externals: {
     vscode: "commonjs vscode",
   },
+  mode: "production",
 };

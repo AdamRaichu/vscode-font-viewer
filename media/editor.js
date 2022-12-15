@@ -3,6 +3,7 @@ const vscode = acquireVsCodeApi();
 window.addEventListener("message", (e) => {
   if (e.data.command === "base64") {
     document.getElementById("loading").remove();
+    document.getElementById("preview").style.display = "block";
     var target = document.getElementById("font-container");
     var mime = getMime(e.data.uri);
     if (mime === "INVALID") {
@@ -14,7 +15,6 @@ window.addEventListener("message", (e) => {
   font-family: "AnUnguessableNameWhichShallNotBeTaken"; 
   src: url(data:${mime};base64,${e.data.base64});
 }`;
-    document.getElementById("preview").style.display = "block";
   }
 });
 

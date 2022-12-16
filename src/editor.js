@@ -35,6 +35,8 @@ export default class FontEdit {
       <p>1234567890.:,; ' " (!?) +-/=</p>
     </div>
     <hr>
+    <p contenteditable>You can edit the text of this paragraph.</p>
+    <hr>
     <p class="s12"><span class="label">12: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
     <p class="s18"><span class="label">18: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
     <p class="s24"><span class="label">24: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>

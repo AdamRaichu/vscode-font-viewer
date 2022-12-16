@@ -32,7 +32,7 @@ export default class FontEdit {
   <div id="preview">
     <div class="s18">
       <p>abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-      <p>1234567890.:,; ' " (!?) +-/=</p>
+      <p>1234567890 . : , ; ' " (!?) +-/=</p>
     </div>
     <hr>
     <p contenteditable>You can edit the text of this paragraph.</p>

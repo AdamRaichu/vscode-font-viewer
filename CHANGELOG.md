@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 A setting for a custom paragraph of text.
 
+## [1.0.5] - 2022-12-15
+
+Add changelog file.
+
+There is now a paragraph you can edit in the viewer.
+
 ## [1.0.3] - 2022-12-15
 
 Initial working release of this extension. Viewer supports otf, woff, eot, ttf, and woff2 files.

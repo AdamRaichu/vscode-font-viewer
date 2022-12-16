@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/AdamRaichu/vscode-font-viewer/issues"
   },
-  "version": "1.0.3",
+  "version": "1.0.5",
   "browser": "./dist/main.js",
   "main": "./dist/main.js",
   "activationEvents": [

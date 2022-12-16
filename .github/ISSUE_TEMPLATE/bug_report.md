@@ -14,12 +14,13 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-**Extension version** 
+**Extension version**
 What version of the extension were you using when you saw the bug?
 
 **Expected behavior**

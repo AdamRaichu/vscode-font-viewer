@@ -11,7 +11,7 @@
   "repository": {
     "url": "https://github.com/AdamRaichu/vscode-font-viewer"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "browser": "./dist/main.js",
   "main": "./dist/main.js",
   "activationEvents": [
@@ -27,7 +27,19 @@
         "displayName": "Font Preview",
         "selector": [
           {
+            "filenamePattern": "*.eot"
+          },
+          {
             "filenamePattern": "*.otf"
+          },
+          {
+            "filenamePattern": "*.ttf"
+          },
+          {
+            "filenamePattern": "*.woff"
+          },
+          {
+            "filenamePattern": "*.woff2"
           }
         ],
         "priority": "default"

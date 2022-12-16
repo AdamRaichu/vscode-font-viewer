@@ -7,9 +7,20 @@
   "author": {
     "name": "AdamRaichu"
   },
-  "categories": [],
+  "galleryBanner": {
+    "color": "#34495e",
+    "theme": "dark"
+  },
+  "license": "MIT",
+  "categories": [
+    "Visualization"
+  ],
   "repository": {
-    "url": "https://github.com/AdamRaichu/vscode-font-viewer"
+    "url": "https://github.com/AdamRaichu/vscode-font-viewer",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdamRaichu/vscode-font-viewer/issues"
   },
   "version": "1.0.3",
   "browser": "./dist/main.js",

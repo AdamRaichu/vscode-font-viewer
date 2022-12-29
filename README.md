@@ -12,4 +12,8 @@ This extension, based on the Windows font preview, allows you to get an idea of 
 
 Install the extension from the Extensions sidebar panel `adamraichu.font-viewer`, or from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=AdamRaichu.font-viewer).
 
+Upon opening a font file, the editor will display several paragraphs of text at different sizes.
+
+The text of the paragraph separated by two lines is editable.
+
 If you would like another type of font file to be supported, please [submit an issue](https://github.com/AdamRaichu/vscode-font-viewer/issues/new/choose).

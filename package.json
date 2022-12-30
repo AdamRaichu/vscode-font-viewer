@@ -15,6 +15,11 @@
   "categories": [
     "Visualization"
   ],
+  "keywords": [
+    "font",
+    "preview",
+    "viewer"
+  ],
   "repository": {
     "url": "https://github.com/AdamRaichu/vscode-font-viewer",
     "type": "git"

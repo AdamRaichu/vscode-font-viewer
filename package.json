@@ -60,6 +60,18 @@
         ],
         "priority": "default"
       }
+    ],
+    "configuration": [
+      {
+        "title": "Font Viewer",
+        "properties": {
+          "fontViewer.ligaturesEnabled": {
+            "type": "boolean",
+            "markdownDescription": "Whether the preview should allow [ligatures](https://fonts.google.com/knowledge/glossary/ligature).",
+            "default": true
+          }
+        }
+      }
     ]
   },
   "scripts": {

@@ -13,6 +13,7 @@ export default class FontEdit {
 
   async resolveCustomEditor(document, panel, _token) {
     var extUri = vscode.extensions.getExtension("adamraichu.font-viewer").extensionUri;
+    var config = vscode.workspace.getConfiguration().fontViewer;
 
     panel.webview.options = {
       enableScripts: true,
@@ -26,6 +27,7 @@ export default class FontEdit {
   <script src="${panel.webview.asWebviewUri(vscode.Uri.joinPath(extUri, "media", "editor.js"))}"></script>
   <style id="font-container"></style>
   <link rel="stylesheet" href="${panel.webview.asWebviewUri(vscode.Uri.joinPath(extUri, "media", "editor.css"))}"></link>
+  <style>${config.ligaturesEnabled ? "" : `* {font-variant-ligatures: none;}`}</style>
 </head>
 <body>
   <h1 id="loading">Font Preview is loading...</h1>

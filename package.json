@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/AdamRaichu/vscode-font-viewer/issues"
   },
-  "version": "1.0.7",
+  "version": "1.1.0",
   "browser": "./dist/main.js",
   "main": "./dist/main.js",
   "activationEvents": [
@@ -70,6 +70,22 @@
             "type": "boolean",
             "markdownDescription": "Whether the preview should allow [ligatures](https://fonts.google.com/knowledge/glossary/ligature).",
             "default": true
+          },
+          "fontViewer.sentence": {
+            "type": "string",
+            "markdownDescription": "The pangram to use in the font preview.\n\nReopen the file to see changes.",
+            "default": "The quick brown fox jumps over the lazy dog. 1234567890"
+          },
+          "fontViewer.characterList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "markdownDescription": "A list of strings to show at the beginning of the font preview. Each array item is shown in a new paragraph.\n\nReopen the file to see changes.",
+            "default": [
+              "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+              "1234567890 . : , ; ' \" (!?) +-/="
+            ]
           }
         }
       }
@@ -80,6 +96,7 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.63.0",
+    "@vscode/webview-ui-toolkit": "^1.4.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },

@@ -24,28 +24,28 @@ export default class FontEdit {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="${panel.webview.asWebviewUri(vscode.Uri.joinPath(extUri, "media", "editor.js"))}"></script>
+  <script src="${panel.webview.asWebviewUri(vscode.Uri.joinPath(extUri, "dist", "media.js"))}"></script>
   <style id="font-container"></style>
   <link rel="stylesheet" href="${panel.webview.asWebviewUri(vscode.Uri.joinPath(extUri, "media", "editor.css"))}"></link>
   <style>${config.ligaturesEnabled ? "" : `* {font-variant-ligatures: none;}`}</style>
 </head>
 <body>
+  <vscode-button id="open-settings">Open Extension Settings</vscode-button>
   <h1 id="loading">Font Preview is loading...</h1>
   <div id="preview">
     <div class="s18">
-      <p>abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-      <p>1234567890 . : , ; ' " (!?) +-/=</p>
+      <p>${config.characterList.join("</p><p>")}</p>
     </div>
     <hr>
-    <p contenteditable>You can edit the text of this paragraph.</p>
+    <p contenteditable id="editable">You can edit the text of this paragraph.</p>
     <hr>
-    <p class="s12"><span class="label">12: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s18"><span class="label">18: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s24"><span class="label">24: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s36"><span class="label">36: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s48"><span class="label">48: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s60"><span class="label">60: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
-    <p class="s72"><span class="label">72: </span>The quick brown fox jumps over the lazy dog. 1234567890</p>
+    <p class="s12"><span class="label">12: </span>${config.sentence}</p>
+    <p class="s18"><span class="label">18: </span>${config.sentence}</p>
+    <p class="s24"><span class="label">24: </span>${config.sentence}</p>
+    <p class="s36"><span class="label">36: </span>${config.sentence}</p>
+    <p class="s48"><span class="label">48: </span>${config.sentence}</p>
+    <p class="s60"><span class="label">60: </span>${config.sentence}</p>
+    <p class="s72"><span class="label">72: </span>${config.sentence}</p>
   </div>
 </body>
 </html>`;
@@ -57,6 +57,9 @@ export default class FontEdit {
       }
       if (message.command === "invalid") {
         vscode.window.showErrorMessage("Invalid font file uri. Please make sure you are using an eot, otf, ttf, woff, or woff2 file.");
+      }
+      if (message.command === "openSettings") {
+        vscode.commands.executeCommand("workbench.action.openSettings", "@ext:adamraichu.font-viewer");
       }
     });
   }
